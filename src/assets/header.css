@@ -1,0 +1,23 @@
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: grey;
+    padding: 1em 5em;
+}
+
+#logo{
+    font-weight: 600;
+    color: whitesmoke;
+}
+
+.nav-link{
+    padding: 1em 1em;
+    color: whitesmoke;
+}
+
+.nav-link:hover{
+    background-color: lightblue;
+    color: green;
+    border-radius: 3px;
+}
