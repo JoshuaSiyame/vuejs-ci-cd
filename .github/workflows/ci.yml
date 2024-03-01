@@ -16,8 +16,9 @@ jobs:
       - uses: actions/checkout@v3
       - name: Install dependencies
         run: npm install
-      - name: Run development server
-        run: npm run dev
+      # - name: Run development server
+        # run: npm run dev
+        # background: true
   
   # stop development server
   stop-development-server:
