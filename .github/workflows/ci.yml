@@ -19,6 +19,13 @@ jobs:
       - name: Run development server
         run: npm run dev
   
+  # stop development server
+  stop-development-server:
+    runs-on: ubuntu-latest
+    steps:
+      - name:
+        run: pkill -f "npm run serve" || true
+  
   # unit testing
   unit-tests:
     timeout-minutes: 60
