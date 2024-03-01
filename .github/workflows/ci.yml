@@ -23,8 +23,8 @@ jobs:
   stop-development-server:
     runs-on: ubuntu-latest
     steps:
-      - name:
-        run: pkill -f "npm run serve" || true
+      - name: Stop development server
+        run: pkill -f "npm run dev" || true
   
   # unit testing
   unit-tests:
@@ -36,7 +36,7 @@ jobs:
         with:
           node-version: 18
       - name: Install dependencies
-        run: npm i
+        run: npm install
       - name: Execute unit tests
         run: npm run test:coverage
       - name: Uploading artifacts
